@@ -25,3 +25,30 @@ function displayProjects(startIndex, endIndex) {
       }
     }
   }
+
+  $(document).ready(function() {
+    displayProjects(0, 3); 
+  
+   
+    let currentIndex = 3;
+    $('#loadMore').click(function() {
+      displayProjects(currentIndex, currentIndex + 3);
+      currentIndex += 3;
+    });
+  
+   
+    $('#contactForm').submit(function(event) {
+      event.preventDefault();
+  
+      const name = $('#name').val();
+      const email = $('#email').val();
+      const message = $('#message').val();
+  
+      if (name && email && message) {
+        $('#formMessage').html('<p class="text-success">Votre message a été envoyé avec succès !</p>');
+      } else {
+        $('#formMessage').html('<p class="text-danger">Tous les champs sont requis.</p>');
+      }
+    });
+  });
+  
