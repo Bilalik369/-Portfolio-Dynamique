@@ -1,0 +1,288 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #9f9fae;
+    color: #ff1919;
+    line-height: 1.6;
+    padding-top:50px; 
+  }
+  
+
+  .navbar {
+    background-color: #97c1c1;
+    box-shadow: 0 2px 8px   rgba(138, 112, 230, 0.2);
+  }
+  
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight:bold;
+    color: #571919;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-brand:hover {
+    color:  #e1ff02;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #000000 !important;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    padding:  10px;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ff8c00 !important;
+  }
+  
+  
+  header {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  
+  #about {
+    padding: 3rem 2rem;
+    background-color: #edfadb;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+  
+  #about h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  #about img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #about img:hover {
+    transform: scale(1.1);
+  }
+  
+  #about p {
+    font-size: 1.1rem;
+    color: #397191;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  
+  #projects {
+    padding: 3rem 2rem;
+    background-color: #7fecff;
+  }
+  
+  #projects h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .card-text {
+    color: #777;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card a {
+    background-color: #2575fc;
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card a:hover {
+    background-color: #6a11cb;
+  }
+  
+  
+  #contact {
+    padding: 3rem 2rem;
+    background-color: hsl(192, 80%, 82%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  form .form-control {
+    border-radius: 8px;
+    border: 1px solid #0d09ff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  form .form-control:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+  }
+  
+  form button {
+    background-color: #2575fc;
+    border: none;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #6a11cb;
+  }
+  
+  
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  
+  footer a {
+    color: #ff8c00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #fff;
+  }
+  
+  
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.5rem;
+    }
+  
+    header p {
+      font-size: 1rem;
+    }
+  
+    #about img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .card-body {
+      padding: 1rem;
+    }
+  
+    form button {
+      padding: 0.7rem 1.4rem;
+    }
+  }
+  
+.navbar-nav {
+    justify-content: flex-end; 
+}
+
+.nav-item {
+    margin-left: 15px; 
+}
+
+
+.navbar-nav .nav-link:hover {
+    color: #ff8c00 !important; 
+    background-color: rgba(255, 140, 0, 0.1); 
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #contactForm {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  #contactForm .form-control {
+    height: 50px;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  #contactForm textarea {
+    text-align: left; /* Pour éviter le centrage du texte dans le champ de message */
+  }
+  
+  #contactForm .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+  
+  
